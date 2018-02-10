@@ -4,7 +4,7 @@ def get_file(file_name):
 
     file = open(file_name, 'r')
 
-    return file.read()
+    return file
 
 
 def isPalindrome(words):
@@ -14,5 +14,20 @@ def isPalindrome(words):
     rev.reverse()
     return org == rev
 
-def get_text_from_file(file):
+
+"""
+Returns a list of file text with carriage return stripped off
+"""
+def get_clean_text(file):
+    return [line.rstrip('\n') for line in file.readlines()]
+
+
+def generate_output_files(file_text_list):
+    pal_file = open('palindrome.txt', 'w')
+    oth_file = open('other_text.txt', 'w')
+    for line in file_text_list:
+        if isPalindrome(line):
+            pal_file.write(f'{line}\n')
+        else:
+            oth_file.write(f'{line}\n')
     return
