@@ -1,1 +1,6 @@
 .cache
+__pycache__
+**/__pycache__
+**/**/__pycache__
+**/other_text.txt
+**/palindrome.txt
