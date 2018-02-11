@@ -8,6 +8,7 @@ def get_file(file_name):
 
 
 def isPalindrome(words):
+    """After removing spaces, checks if string is a palindrome."""
     words = words.replace(' ', '').lower()
     org = list(words)
     rev = list(words)
@@ -15,10 +16,8 @@ def isPalindrome(words):
     return org == rev
 
 
-"""
-Returns a list of file text with carriage return stripped off
-"""
 def get_clean_text(file):
+    """Removes carriage return's from the list."""
     return [line.rstrip('\n') for line in file.readlines()]
 
 
