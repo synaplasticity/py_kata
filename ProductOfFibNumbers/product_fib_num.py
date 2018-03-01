@@ -6,11 +6,18 @@ def fibonacci(number):
 
 
 def product_fib_num(product):
-
     """
     Returns a list of the two consecutive fibonacci numbers
     that give the provided product and a boolean indcating if
-    those two consecutive numbers where found
+    those two consecutive numbers where found.
     """
 
-    pass
+    for n in range(1, product):
+        f1 = fibonacci(n)
+        f2 = fibonacci(n + 1)
+
+        if f1 * f2 == product or f1 * f2 > product:
+            break
+
+    return [f1, f2, f1 * f2 == product]
+    # return list[0]

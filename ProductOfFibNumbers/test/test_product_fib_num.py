@@ -18,5 +18,9 @@ def test_fibonacci_function_for_11():
     assert fibonacci(11) is 89
 
 
-def test_prodt_fib_num_true():
-    assert product_fib_num(714) is [21, 34, True]
+def test_prod_fib_num_true():
+    assert product_fib_num(714) == [21, 34, True]
+
+
+def test_prod_fib_num_true_false():
+    assert product_fib_num(5895) == [89, 144, False]
