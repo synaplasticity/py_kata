@@ -1,7 +1,0 @@
-[
-  "test/test_racing.py::test_runner_1_at_0_speed",
-  "test/test_racing.py::test_runner_2_at_0_speed",
-  "test/test_racing.py::test_lead_at_0_distance",
-  "test/test_racing.py::test_first_has_to_be_slower_than_second",
-  "test/test_racing.py::test_time_required_for_catchup"
-]
