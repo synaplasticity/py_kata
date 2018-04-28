@@ -1,5 +1,7 @@
 .cache
 __pycache__
+**/pytest_cache
+**/**/.pytest_cache
 **/__pycache__
 **/**/__pycache__
 **/other_text.txt
