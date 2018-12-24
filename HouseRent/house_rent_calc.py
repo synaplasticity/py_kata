@@ -13,4 +13,4 @@ def rent_for_years(init_rent, perc_increase, increase_interval=1, years=1):
         new_rent = old_rent + old_rent * (perc_increase / 100)
         old_rent = new_rent
 
-    return new_rent
+    return round(new_rent, 2)
