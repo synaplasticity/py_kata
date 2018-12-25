@@ -15,3 +15,7 @@ def test_rent_for_3year_interval_for_7years():
 
 def test_rent_for_3year_interval_for_10years():
     assert rent_for_years(35000, 15, increase_interval=3, years=10) == 53230.62
+
+
+def test_rent_for_3year_interval_for_16years():
+    assert rent_for_years(35000, 15, increase_interval=3, years=16) == 70397.50
