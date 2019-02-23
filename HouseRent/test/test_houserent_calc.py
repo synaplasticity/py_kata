@@ -34,3 +34,8 @@ def test_annual_rent_for_3years():
 def test_annual_for_3year_interval_for_4years():
     assert (annual_rent_for_period(35000, 15, increase_interval=3, years=4) ==
             40250 * 12 * 4)
+
+
+def test_annual_for_3year_interval_for_10years():
+    assert (annual_rent_for_period(35000, 15, increase_interval=3, years=10) ==
+            53230.62 * 12 * 10)
